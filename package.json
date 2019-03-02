@@ -1,0 +1,13 @@
+{
+  "name": "ssigmaapiweb",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@improbable-eng/grpc-web": "^0.9.1",
+    "google-protobuf": "^3.7.0-rc.3"
+  },
+  "author": "sansigma",
+  "license": "MIT"
+}
