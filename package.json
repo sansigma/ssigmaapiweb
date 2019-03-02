@@ -6,7 +6,7 @@
   "scripts": {},
   "dependencies": {
     "@improbable-eng/grpc-web": "^0.9.1",
-    "google-protobuf": "^3.7.0-rc.3"
+    "@types/google-protobuf": "^3.2.7"
   },
   "author": "sansigma",
   "license": "MIT"
