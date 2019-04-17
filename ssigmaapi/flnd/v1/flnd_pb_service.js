@@ -1,13 +1,13 @@
-// package: ssigmaapi.vitess.v1
-// file: ssigmaapi/flnd/v1/vitess.proto
+// package: ssigmaapi.flnd.v1
+// file: ssigmaapi/flnd/v1/flnd.proto
 
-var ssigmaapi_flnd_v1_vitess_pb = require("../../../ssigmaapi/flnd/v1/vitess_pb");
+var ssigmaapi_flnd_v1_flnd_pb = require("../../../ssigmaapi/flnd/v1/flnd_pb");
 var google_protobuf_empty_pb = require("google-protobuf/google/protobuf/empty_pb");
 var grpc = require("@improbable-eng/grpc-web").grpc;
 
 var VitessServiceV1 = (function () {
   function VitessServiceV1() {}
-  VitessServiceV1.serviceName = "ssigmaapi.vitess.v1.VitessServiceV1";
+  VitessServiceV1.serviceName = "ssigmaapi.flnd.v1.VitessServiceV1";
   return VitessServiceV1;
 }());
 
@@ -17,7 +17,7 @@ VitessServiceV1.GetMessage = {
   requestStream: false,
   responseStream: false,
   requestType: google_protobuf_empty_pb.Empty,
-  responseType: ssigmaapi_flnd_v1_vitess_pb.VitessMessage
+  responseType: ssigmaapi_flnd_v1_flnd_pb.VitessMessage
 };
 
 VitessServiceV1.CreateMessage = {
@@ -25,7 +25,7 @@ VitessServiceV1.CreateMessage = {
   service: VitessServiceV1,
   requestStream: false,
   responseStream: false,
-  requestType: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+  requestType: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
   responseType: google_protobuf_empty_pb.Empty
 };
 
@@ -34,7 +34,7 @@ VitessServiceV1.UpdateMessage = {
   service: VitessServiceV1,
   requestStream: false,
   responseStream: false,
-  requestType: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+  requestType: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
   responseType: google_protobuf_empty_pb.Empty
 };
 
@@ -43,7 +43,7 @@ VitessServiceV1.DeleteMessage = {
   service: VitessServiceV1,
   requestStream: false,
   responseStream: false,
-  requestType: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+  requestType: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
   responseType: google_protobuf_empty_pb.Empty
 };
 

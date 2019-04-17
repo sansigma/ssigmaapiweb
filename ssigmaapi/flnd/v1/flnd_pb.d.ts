@@ -1,5 +1,5 @@
-// package: ssigmaapi.vitess.v1
-// file: ssigmaapi/flnd/v1/vitess.proto
+// package: ssigmaapi.flnd.v1
+// file: ssigmaapi/flnd/v1/flnd.proto
 
 import * as jspb from "google-protobuf";
 import * as google_protobuf_empty_pb from "google-protobuf/google/protobuf/empty_pb";

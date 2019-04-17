@@ -1,7 +1,7 @@
-// package: ssigmaapi.vitess.v1
-// file: ssigmaapi/flnd/v1/vitess.proto
+// package: ssigmaapi.flnd.v1
+// file: ssigmaapi/flnd/v1/flnd.proto
 
-import * as ssigmaapi_flnd_v1_vitess_pb from "../../../ssigmaapi/flnd/v1/vitess_pb";
+import * as ssigmaapi_flnd_v1_flnd_pb from "../../../ssigmaapi/flnd/v1/flnd_pb";
 import * as google_protobuf_empty_pb from "google-protobuf/google/protobuf/empty_pb";
 import {grpc} from "@improbable-eng/grpc-web";
 
@@ -11,7 +11,7 @@ type VitessServiceV1GetMessage = {
   readonly requestStream: false;
   readonly responseStream: false;
   readonly requestType: typeof google_protobuf_empty_pb.Empty;
-  readonly responseType: typeof ssigmaapi_flnd_v1_vitess_pb.VitessMessage;
+  readonly responseType: typeof ssigmaapi_flnd_v1_flnd_pb.VitessMessage;
 };
 
 type VitessServiceV1CreateMessage = {
@@ -19,7 +19,7 @@ type VitessServiceV1CreateMessage = {
   readonly service: typeof VitessServiceV1;
   readonly requestStream: false;
   readonly responseStream: false;
-  readonly requestType: typeof ssigmaapi_flnd_v1_vitess_pb.VitessMessage;
+  readonly requestType: typeof ssigmaapi_flnd_v1_flnd_pb.VitessMessage;
   readonly responseType: typeof google_protobuf_empty_pb.Empty;
 };
 
@@ -28,7 +28,7 @@ type VitessServiceV1UpdateMessage = {
   readonly service: typeof VitessServiceV1;
   readonly requestStream: false;
   readonly responseStream: false;
-  readonly requestType: typeof ssigmaapi_flnd_v1_vitess_pb.VitessMessage;
+  readonly requestType: typeof ssigmaapi_flnd_v1_flnd_pb.VitessMessage;
   readonly responseType: typeof google_protobuf_empty_pb.Empty;
 };
 
@@ -37,7 +37,7 @@ type VitessServiceV1DeleteMessage = {
   readonly service: typeof VitessServiceV1;
   readonly requestStream: false;
   readonly responseStream: false;
-  readonly requestType: typeof ssigmaapi_flnd_v1_vitess_pb.VitessMessage;
+  readonly requestType: typeof ssigmaapi_flnd_v1_flnd_pb.VitessMessage;
   readonly responseType: typeof google_protobuf_empty_pb.Empty;
 };
 
@@ -84,37 +84,37 @@ export class VitessServiceV1Client {
   getMessage(
     requestMessage: google_protobuf_empty_pb.Empty,
     metadata: grpc.Metadata,
-    callback: (error: ServiceError|null, responseMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage|null) => void
+    callback: (error: ServiceError|null, responseMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage|null) => void
   ): UnaryResponse;
   getMessage(
     requestMessage: google_protobuf_empty_pb.Empty,
-    callback: (error: ServiceError|null, responseMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage|null) => void
+    callback: (error: ServiceError|null, responseMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage|null) => void
   ): UnaryResponse;
   createMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     metadata: grpc.Metadata,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
   createMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
   updateMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     metadata: grpc.Metadata,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
   updateMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
   deleteMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     metadata: grpc.Metadata,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
   deleteMessage(
-    requestMessage: ssigmaapi_flnd_v1_vitess_pb.VitessMessage,
+    requestMessage: ssigmaapi_flnd_v1_flnd_pb.VitessMessage,
     callback: (error: ServiceError|null, responseMessage: google_protobuf_empty_pb.Empty|null) => void
   ): UnaryResponse;
 }
